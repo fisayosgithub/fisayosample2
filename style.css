@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  /*  */
+  box-sizing: border-box;
+}
+
+html {
+  /* adding why? */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  /* add */
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  width: 120rem;
+}
+
+.header-part {
+  display: flex;
+  justify-content: space-between;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  align-items: center;
+}
+
+.clayhall-logo {
+  height: 2.2rem;
+  color: #fff;
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+  list-style: none;
+  /*  */
+  /* transition: all, 0.3s; */
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  /* understand why */
+  display: inline-block;
+  text-decoration: none;
+  font-size: 500;
+  font-size: 1.8rem;
+  color: #fff;
+  /* add ...i later understood why*/
+  transition: all, 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: brown;
+}
+
+.header-container {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(39, 37, 37, 0.6)),
+    url(hero.jpg);
+  background-size: cover;
+
+  /* background-position: left; */
+  color: #fff;
+  max-width: 100%;
+}
+.header-text-box {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.header-text-box-inner {
+  gap: 4.8rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 9.8rem 4.8rem;
+}
